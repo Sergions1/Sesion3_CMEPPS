@@ -8,16 +8,23 @@ public class Cuenta {
     Double saldo;
     List <Movimiento> mMovimientos;
     
-    
-
 	public Cuenta(Double saldo) {
 		super();
 		this.saldo = saldo;
 	}
-	public double ingresar(double x) {
-		return 200;
+	
+	public Double getSaldo() {
+		return saldo;
 	}
-	public double retirar(double x) {
-		return 0;
+
+	public void setSaldo(Double saldo) {
+		this.saldo = saldo;
+	}
+
+	public void ingresar(double x) {
+		this.saldo += x;
+	}
+	public void retirar(double x) {
+		this.saldo -= x;
 	}
 }
