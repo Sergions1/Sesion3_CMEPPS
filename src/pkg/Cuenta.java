@@ -25,6 +25,7 @@ public class Cuenta {
 		this.saldo += x;
 	}
 	public void retirar(double x) {
-		this.saldo -= x;
+		if(saldo-x >= -500)
+			this.saldo -= x;
 	}
 }
